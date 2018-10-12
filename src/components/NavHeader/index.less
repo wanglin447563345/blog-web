@@ -1,0 +1,23 @@
+@import "../../theme.less";
+
+.nav_header{
+  background: @mainColor;
+  height:60px;
+  line-height: 60px;
+  nav{
+    display: flex;
+    a{
+      flex:1;
+      text-align: center;
+      color: @fcfff;
+      transition: all 0.5s;
+      &.active{
+        background:lighten(@mainColor, 10%);
+      }
+      &:hover{
+        background:lighten(@mainColor, 10%);
+        transform: rotateY(360deg);
+      }
+    }
+  }
+}

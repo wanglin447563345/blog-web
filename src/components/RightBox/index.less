@@ -1,0 +1,55 @@
+@import "../../theme";
+
+.right_box{
+  padding: 0 20px;
+  .clock{
+    text-align: center;
+    text-shadow: 0 2px 5px @mainColor;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+  }
+  h1{
+    position: relative;
+    padding:10px 0;
+    color: @mainColor;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 0;
+      border-bottom: 3px solid @mainColor;
+      bottom: -1px;
+    }
+  }
+  >p{
+    border-bottom: 1px dashed #ccc;
+    line-height: 50px;
+    margin-bottom: 0;
+    span{
+      color: @mainColor;
+      display: inline-block;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+  }
+  div{
+    span{
+      color: @mainColor;
+      display: inline-block;
+      margin-right: 8px;
+      font-weight: bold;
+      line-height: 50px;
+    }
+    p{
+      text-align: center;
+      img{
+        max-width: 180px;
+      }
+    };
+  }
+}

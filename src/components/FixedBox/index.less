@@ -1,0 +1,27 @@
+@import "../../theme";
+.fixed_box{
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 50px;
+  div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: @fcfff;
+    border: 1px solid @mainColor;
+    transition: all 0.5s;
+    .iconfont{
+      font-size: 26px;
+      color:@mainColor;
+      transition: all 0.5s;
+    }
+    &:hover{
+      background: @mainColor;
+      .iconfont{
+        color:@fcfff;
+      }
+    }
+  }
+}

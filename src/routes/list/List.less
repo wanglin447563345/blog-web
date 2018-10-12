@@ -1,0 +1,123 @@
+@import "../../theme";
+.list{
+  background: @fcfff;
+  padding:20px;
+  margin:30px auto;
+  .list_left{
+    border-right: 1px dashed #ccc;
+    padding-right: 20px;
+    h1{
+      padding:10px 0;
+      color: @mainColor;
+      border-bottom: 1px solid @mainColor;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .list_item{
+      display: flex;
+      padding:15px;
+      margin:15px auto;
+      border-bottom:1px dashed #ccc;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 0 0 5px @mainColor;
+        transform: translateY(-3px);
+      }
+      >div{
+        flex:1;
+        img{
+          max-width: 100%;
+          padding-right:20px;
+        }
+        h3{
+          font-size: 16px;
+          color: @mainColor;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+        }
+        p{
+          line-height: 26px;
+          margin-top: 10px;
+        };
+        div{
+          display: flex;
+          font-size: 12px;
+          color: #999;
+          span{
+            flex:1;
+          }
+        }
+      }
+    }
+    .ant-pagination{
+      text-align: center;
+      margin:30px auto;
+      .ant-pagination-item:hover{
+        border-color: @mainColor;
+        a{
+          color: @mainColor;
+        }
+      }
+      .ant-pagination-item-active{
+        border-color: @mainColor;
+        a{
+          color: @mainColor;
+        }
+      }
+    }
+  }
+  .list_right{
+    .input{
+      margin-top: 10px;
+      button{
+        background: @mainColor;
+        border-color: @mainColor;
+      };
+      input:focus{
+        box-shadow:  0 0 3px @mainColor;
+      }
+    }
+    h1{
+      position: relative;
+      padding:10px 0;
+      color: @mainColor;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 30px;
+      &:before{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 0;
+        border-bottom: 3px solid @mainColor;
+        bottom: -1px;
+      }
+    }
+    p{
+      border: 1px solid #ccc;
+      line-height: 50px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      color: @fc333;
+      transition: all 0.5s;
+      margin-bottom: -1px;
+      &:hover, &.active{
+        background: @mainColor;
+        color: @fcfff !important;
+      }
+
+      span{
+        &:nth-child(2){
+          font-size: 30px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

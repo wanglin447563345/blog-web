@@ -1,0 +1,58 @@
+@import "../../theme";
+
+
+.home{
+  .ant-carousel .slick-slide {
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  .ant-carousel .slick-dots{
+    bottom: 50px;
+    li{
+      background: @fcfff;
+      &.slick-active>button{
+        background: @mainColor;
+      }
+    }
+  }
+  .list{
+    background: #fff;
+    margin: 30px auto;
+    padding:20px ;
+    h2{
+      font-size: 18px;
+      border-bottom: 1px solid @mainColor;
+      color: @mainColor;
+      line-height: 36px;
+    }
+    p{
+      color: #333;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding:0 60px 0 15px;
+      position: relative;
+      border-bottom: 1px dashed #ccc;
+      line-height: 30px;
+      &:before{
+        content: '♦';
+        color: @mainColor;
+        position: absolute;
+        left: 0;
+      };
+      &:hover{
+        color: @mainColor;
+        cursor: pointer;
+      }
+      span{
+        position: absolute;
+        right:0;
+      }
+    }
+  }
+}
